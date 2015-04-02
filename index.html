@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>OpenMing</title>
+
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link type="text/css" href="css/bootstrap-timepicker.min.css" />
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap-2.2.2.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap-timepicker.min.js"></script>
+
+
+    <!-- Custom CSS -->
+    <link href="css/agency.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- JQuery -->
+
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+    <script>
+    $(function() {
+       $( "#date" ).datepicker();
+     });
+    </script>
+
+</head>
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">OpenMing</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#reservations">reservations</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#choices">Dates</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#timeline">timeline</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#team">Team</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-lead-in"><br><br></div>
+                <div class="intro-heading"><br></div>
+                <a href="#reservations" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- reservations Section -->
+    <section id="reservations">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">reservations</h2>
+                    <h3 class="section-subheading text-muted">Ming is a very busy girl.  We recommend all guests to set reservations at least 1 to 2 weeks in advance.</h3>
+                </div>
+            </div>
+
+          
+        </div>
+ 
+        <script type="text/javascript">
+            $('#timepicker5').timepicker({
+                template: false,
+                showInputs: false,
+                minuteStep: 5
+            });
+        </script>
+
+            <!-- Form  Section ---->
+            <div class="row">
+
+                <div class="col-sm-8 col-sm-offset-2">
+
+                    <form id="booking-form" role="form" data-mobiletimepiker="On" novalidate="" _lpchecked="1">
+
+                        <div class="row">
+                            <div class="col-sm-6 form-group">
+                                <label class="sr-only" for="bname">Name</label>
+                                <input type="text" id="bname" class="form-control-two" name="bname" placeholder="Name" required="" data-validation-required-message="So Ming knows who you are." style="cursor: auto; background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHklEQVQ4EaVTO26DQBD1ohQWaS2lg9JybZ+AK7hNwx2oIoVf4UPQ0Lj1FdKktevIpel8AKNUkDcWMxpgSaIEaTVv3sx7uztiTdu2s/98DywOw3Dued4Who/M2aIx5lZV1aEsy0+qiwHELyi+Ytl0PQ69SxAxkWIA4RMRTdNsKE59juMcuZd6xIAFeZ6fGCdJ8kY4y7KAuTRNGd7jyEBXsdOPE3a0QGPsniOnnYMO67LgSQN9T41F2QGrQRRFCwyzoIF2qyBuKKbcOgPXdVeY9rMWgNsjf9ccYesJhk3f5dYT1HX9gR0LLQR30TnjkUEcx2uIuS4RnI+aj6sJR0AM8AaumPaM/rRehyWhXqbFAA9kh3/8/NvHxAYGAsZ/il8IalkCLBfNVAAAAABJRU5ErkJggg==); background-attachment: scroll; background-position: 100% 50%; background-repeat: no-repeat;">
+                                <p class="help-block text-danger"></p>
+                            </div>
+
+                            <div class="col-sm-6 form-group">
+                                <label class="sr-only" for="bphone">Phone</label>
+                                <input type="number" id="bphone" class="form-control-two" name="bphone" placeholder="Phone" required="" data-validation-required-message="So Ming can text you.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div><!-- .row -->
+
+                        <div class="row">
+                            <div class="col-sm-6 form-group">
+                                <label class="sr-only" for="bemail">Email</label>
+                                <input type="email" id="bemail" class="form-control-two" name="bemail" placeholder="Email" required="" data-validation-required-message="So Ming can email you.">
+                                <p class="help-block"></p>
+                            </div>
+
+                            <div class="col-sm-6 form-group">
+                                <label class="sr-only" for="bpeople">How many people?</label>
+                                <input type="text" id="bpeople" class="form-control-two" name="bpeople" placeholder="How many people?" required="" data-validation-required-message="So Ming can get a head count" aria-invalid="false">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div><!-- .row -->
+
+                        <div class="row">
+                            <div class="col-sm-6 form-group">
+                                <label class="sr-only" for="bdate">Date</label>
+                                <input type="text"  id="date" class="form-control-two" name="bdate" placeholder="Date" required="" data-validation-required-message="So Ming knows when to see you." aria-invalid="false">
+                                <p class="help-block text-danger"></p>
+                            </div>
+
+                            <div class="col-sm-6 form-group">
+                                <label class="sr-only" for="btime">Time</label>
+                                <input type="text" id="btime" class="form-control-two ui-timepicker-input" name="btime" placeholder="Time" autocomplete="off" required="" data-validation-required-message="So Ming can be 2 hours late." aria-invalid="false">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div><!-- .row -->
+
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <textarea class="form-control-two" id="bmessage" name="bmessage" rows="4" placeholder="Special Requests" required="" data-validation-required-message="Ming doesn't do special request, but worth a try" aria-invalid="false"></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div><!-- .row -->
+
+                        <div class="row">
+                            <div class="col-sm-12 text-center">
+                                <button type="submit" id="custom-button" style="font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif">SUBMIT</button>
+                            </div>
+                        </div><!-- .row -->
+
+                    </form>
+                    <!-- Ajax response -->
+                    <div id="booking-response" class="ajax-response"></div>
+
+                </div>
+            </div>
+
+            <!-- End Form Section -->
+
+           
+        </div>
+    </section>
+
+    <!-- choices Grid Section -->
+    <section id="choices" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Date Activity Choices</h2>
+                    <h3 class="section-subheading text-muted">Hand Curated & Updated Weekly by Jeff J. Park</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 choices-item">
+                    <a href="#choicesModal1" class="choices-link" data-toggle="modal">
+                        <div class="choices-hover">
+                            <div class="choices-hover-content">
+                                <p class="inside-content">Yes, I know you’ve had bad experiences there in the past.  But I ask, how many bad experiences have you had when in the presence of Jeff J. Park? Plus its a big foodie town more so than Seattle.  
+                                </p>
+                            </div>
+                        </div>
+                        <img src="img/choices/1.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="choices-caption">
+                        <h4>Portland</h4>
+                        <p class="text-muted">Let's Take the Train</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 choices-item">
+                    <a href="#choicesModal2" class="choices-link" data-toggle="modal">
+                        <div class="choices-hover">
+                            <div class="choices-hover-content">
+                                <p class="inside-content">I learned my lesson, I’ll let you plan the itinerary if you choose this option.
+                                </p>
+                            </div>
+                        </div>
+                        <img src="img/choices/vancouver.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="choices-caption">
+                        <h4>Vancouver</h4>
+                        <p class="text-muted">All Aboard</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 choices-item">
+                    <a href="#choicesModal3" class="choices-link" data-toggle="modal">
+                        <div class="choices-hover">
+                            <div class="choices-hover-content">
+                                <p class="inside-content">I’ll be in a suit that is a couple inches too loose and you’ll be in a dress :-).  We will probably have to be liquored up to fully enjoy this choice. 
+                                </p>
+                            </div>
+                        </div>
+                        <img src="img/choices/symphony.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="choices-caption">
+                        <h4>Seattle Symphony</h4>
+                        <p class="text-muted">Dressing Up</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 choices-item">
+                    <a href="#choicesModal4" class="choices-link" data-toggle="modal">
+                        <div class="choices-hover">
+                            <div class="choices-hover-content">
+                                <p class="inside-content">Small quaint (the 1st definition) shops & restaurants
+                                </p>
+                            </div>
+                        </div>
+                        <img src="img/choices/bainbridge.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="choices-caption">
+                        <h4>Bainbridge Island</h4>
+                        <p class="text-muted">Taking the Ferry</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 choices-item">
+                    <a href="#choicesModal5" class="choices-link" data-toggle="modal">
+                        <div class="choices-hover">
+                            <div class="choices-hover-content">
+                                <p class="inside-content">Treehouse lodging in the forest.  Not sure what else your supposed to do in a treehouse.
+                                </p>
+                            </div>
+                        </div>
+                        <img src="img/choices/treehouse.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="choices-caption">
+                        <h4>Treehouses</h4>
+                        <p class="text-muted">In Issaquah</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 choices-item">
+                    <a href="#choicesModal6" class="choices-link" data-toggle="modal">
+                        <div class="choices-hover">
+                            <div class="choices-hover-content">
+                                <p class="inside-content">iPic Theatre in Redmond, Dinner in Bellevue
+                                </p>
+                            </div>
+                        </div>
+                        <img src="img/choices/moviedinner.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="choices-caption">
+                        <h4>Movie & Dinner</h4>
+                        <p class="text-muted">The Always Classic</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 choices-item">
+                    <a href="#choicesModal1" class="choices-link" data-toggle="modal">
+                        <div class="choices-hover">
+                            <div class="choices-hover-content">
+                                <p class="inside-content">Visit a recreational marijuana shop. Smoke a blunt. Get the munchies.  
+                                </p>
+                            </div>
+                        </div>
+                        <img src="img/choices/weed.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="choices-caption">
+                        <h4>Smoke It Up</h4>
+                        <p class="text-muted">100% Legal (at least in WA)</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-6 choices-item">
+                    <a href="#choicesModal2" class="choices-link" data-toggle="modal">
+                        <div class="choices-hover">
+                            <div class="choices-hover-content">
+                                <p class="inside-content">Intro Lesson at Century Ballroom.  Tin Table for Dinner. Molly Moons for dessert. 
+                                </p>
+                            </div>
+                        </div>
+                        <img src="img/choices/swing.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="choices-caption">
+                        <h4>Swing Dancing</h4>
+                        <p class="text-muted">Jeff's Two Left Shoes</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-6 choices-item">
+                    <a href="#choicesModal4" class="choices-link" data-toggle="modal">
+                        <div class="choices-hover">
+                            <div class="choices-hover-content">
+                                <p class="inside-content">Approach random groups as different personas. 
+                                </p>
+                            </div>
+                        </div>
+                        <img src="img/choices/bar.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="choices-caption">
+                        <h4>Bar Hopping</h4>
+                        <p class="text-muted">Every FRI/SAT for Ming</p>
+                    </div>
+                </div>
+             
+                 <div class="col-md-4 col-sm-6 choices-item">
+                    <a href="#choicesModal6" class="choices-link" data-toggle="modal">
+                        <div class="choices-hover">
+                            <div class="choices-hover-content">
+                                <p class="inside-content">Something different. I’d be surprised if you chose this.  Although, I could see you unexpectedly enjoying it.  
+                                </p>
+                            </div>
+                        </div>
+                        <img src="img/choices/shooting.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="choices-caption">
+                        <h4>Shooting Range</h4>
+                        <p class="text-muted">Bad Boys Be Gone</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 choices-item">
+                    <a href="#choicesModal6" class="choices-link" data-toggle="modal">
+                        <div class="choices-hover">
+                            <div class="choices-hover-content">
+                                <p class="inside-content">Workout, Healthy Meal, Late Night Spa, Goodnight's rest. 
+                                </p>
+                            </div>
+                        </div>
+                        <img src="img/choices/sober.jpg" class="img-responsive" alt="" style="width: 293px">
+                    </a>
+                    <div class="choices-caption">
+                        <h4>100% Sober</h4>
+                        <p class="text-muted">The Only Guy to Suggest this</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 choices-item">
+                    <a href="#choicesModal3" class="choices-link" data-toggle="modal">
+                        <div class="choices-hover">
+                            <div class="choices-hover-content">
+                                <p class="inside-content">Our most popular item.  Choose a small sample from each of the choices.
+                                </p>
+                            </div>
+                        </div>
+                        <img src="img/choices/hybrid.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="choices-caption">
+                        <h4>The Hybrid</h4>
+                        <p class="text-muted">Mix & Match</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 choices-item">
+                    <a href="#choicesModal5" class="choices-link" data-toggle="modal">
+                        <div class="choices-hover">
+                            <div class="choices-hover-content">
+                                <p class="inside-content">Grocery shopping, cooking at home and making some kind of dessert with the 82% Cocoa Bar; watching a movie at home
+                                </p>
+                            </div>
+                        </div>
+                        <img src="img/choices/no.jpg" class="img-responsive" alt="" style="width: 293px">
+                    </a>
+                    <div class="choices-caption">
+                        <h4>Ming's Last Choice</h4>
+                        <p class="text-muted">Staying In</p>
+                    </div>
+                </div>
+                 <div class="col-md-4 col-sm-6 choices-item">
+                    <a href="#choicesModal6" class="choices-link" data-toggle="modal">
+                        <div class="choices-hover">
+                            <div class="choices-hover-content">
+                                <p class="inside-content">Ming initiates and asks Jeff to do something 
+                                </p>
+                            </div>
+                        </div>
+                        <img src="img/choices/surprise.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="choices-caption">
+                        <h4>Wild Card</h4>
+                        <p class="text-muted">Shocking Jeff</p>
+                    </div>
+                </div>
+                 <div class="col-md-4 col-sm-6 choices-item">
+                    <a href="#choicesModal6" class="choices-link" data-toggle="modal">
+                        <div class="choices-hover">
+                            <div class="choices-hover-content">
+                                <p class="inside-content">Ditch all responsibilities, expectations & worries.  Fly to Europe for a month - London, Paris, Rome, Milan, Barcelona.  Come back with a different outlook on life.   
+                                </p>
+                            </div>
+                        </div>
+                        <img src="img/choices/nuclear.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="choices-caption">
+                        <h4>The Nuclear Option</h4>
+                        <p class="text-muted">F*ck It</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- timeline Section -->
+    <section id="timeline">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">timeline</h2>
+                    <h3 class="section-subheading text-muted"></h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="timeline">
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/timeline/1.jpg" alt="" style="height: 100%; width: 100%">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>Thursday; April 2, 2015</h4>
+                                    <h4 class="subheading">Ming Examines the Options</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Jeff presents various options.  Ming vetoes or approves each.  Jeff contemplates how this happened.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/timeline/2.jpg" alt="" style="height: 100%; width: 100%">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>Saturday; April 4, 2015</h4>
+                                    <h4 class="subheading">The First Saturday in Seattle</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">To be determined after Ming exercises her veto powers.</p>
+                                </div>
+                            </div>
+                        </li>
+                        
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <h4>To Be
+                                    <br>Continued
+                                    <br>...</h4>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Our Amazing Team</h2>
+                    <h3 class="section-subheading text-muted"></h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="team-member">
+                        <img src="img/team/1.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Ming Huang</h4>
+                        <p class="text-muted">Lead Consumer</p>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="https://twitter.com/itsminghuang"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="https://www.facebook.com/minghuangf?fref=ts"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="https://www.linkedin.com/pub/ming-huang/24/1a5/150"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-sm-6">
+                    <div class="team-member">
+                        <img src="img/team/3.jpg" class="img-responsive img-circle" alt="" style="max-width: 239px">
+                        <h4>Jeff Park</h4>
+                        <p class="text-muted">Lead Creator</p>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="https://twitter.com/jeffjpark"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="https://www.facebook.com/jeffjpark"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="https://www.linkedin.com/in/jeffjpark"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <p class="large text-muted"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Contact Us</h2>
+                    <h3 class="section-subheading text-muted"></h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <form name="sentMessage" id="contactForm" novalidate>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control-three" placeholder="Your Name *" id="name" required data-validation-required-message="So Ming knows who you are.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control-three" placeholder="Your Email *" id="email" required data-validation-required-message="So Ming can email you.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" class="form-control-three" placeholder="Your Phone *" id="phone" required data-validation-required-message="So Ming can text you.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <textarea class="form-control-three" placeholder="Your Message *" id="message" required data-validation-required-message="So Ming knows what you want."></textarea>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <br>
+                            <br>
+                            <div class="col-lg-12 text-center">
+                                <div id="success"></div>
+                                <button type="submit" class="btn btn-xl">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright" style = "text-align:center">
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        <li></a>
+                        </li>
+                        <li><span class="copyright" style = "text-align:center">Copyright &copy; The JM Group 2015</span></a>
+                        </li>
+                        <li></a>
+                        </li>
+                    </ul>
+                </div>
+               
+                
+            </div>
+        </div>
+    </footer>
+
+    <!-- choices Modals -->
+    <!-- Use the modals below to showcase details timeline your choices projects! -->
+
+    <!-- choices Modal 1 -->
+    
+    <!-- choices Modal 2 -->
+
+    <!-- choices Modal 3 -->
+    
+    <!-- choices Modal 4 -->
+
+    <!-- choices Modal 5 -->
+   
+    <!-- choices Modal 6 -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/agency.js"></script>
+
+</body>
+
+</html>
